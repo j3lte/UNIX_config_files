@@ -1,0 +1,8 @@
+.DS\_Store
+*.sw?
+workfiles/
+.deploy/
+build/
+.vimrc
+.lvimrc
+npm-debug.log

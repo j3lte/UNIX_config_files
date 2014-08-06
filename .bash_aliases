@@ -31,6 +31,8 @@ alias ga='g a'
 alias crrepogithub='curl -F "login=gilleswittenberg" -F "token=e276f6e41bcac91dcb97517aa7748472" https://github.com/api/v2/yaml/repos/create -F'
 
 # Node
+alias n="node"
+alias nd="nodemon --debug"
 alias node="env NODE_NO_READLINE=1 rlwrap node"
 
 # Vagrant

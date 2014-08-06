@@ -9,6 +9,7 @@ alias ..="cd .."
 alias ...="cd ../../"
 alias ....="cd ../../../"
 alias .....="cd ../../../../"
+alias ......="cd ../../../../../"
 alias e='exit'
 alias :q='exit'
 alias v='vi'

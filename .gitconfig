@@ -1,13 +1,13 @@
 [user]
-	name = Gilles Wittenberg
-	email = git@gilleswittenberg.com
+	name = Jelte Lagendijk
+	email = jwlagendijk@gmail.com
 [alias]
 	s = status
 	l = log -10 --abbrev-commit --pretty=oneline --decorate=full --graph
 	ll = log --pretty=oneline --decorate=full --graph
 	lol = log -10 --pretty=oneline
 	w = whatchanged
-	d = diff 
+	d = diff
 	dh = diff HEAD^
 	dhh = diff HEAD^^
 	de = diff --ignore-space-at-eol
@@ -88,7 +88,7 @@
 	changed = green
 	untracked = cyan
 [github]
-	user = gilleswittenberg
+	user = j3lte
 [merge]
 	tool = vimdiff
 [http]

@@ -8,6 +8,7 @@
 	lol = log -10 --pretty=oneline
 	w = whatchanged
 	d = diff
+	dt = difftool --dir-diff
 	dh = diff HEAD^
 	dhh = diff HEAD^^
 	de = diff --ignore-space-at-eol
@@ -66,6 +67,10 @@
 [core]
 	excludesfile = ~/.gitignore
 	whitespace = indent-with-non-tab,trailing-space,cr-at-eol,blank-at-eof
+[diff]
+	tool = meld
+[difftool]
+	prompt=false
 [color]
 	diff = auto
 	status = auto
@@ -90,6 +95,12 @@
 [github]
 	user = j3lte
 [merge]
-	tool = vimdiff
+	tool = meld
 [http]
 	sslVerify = false
+
+# Forces the use of SSH instead of HTTPS for any URLs that point to github.
+# This means that if a repo uses "https://github/..." for "origin", we will
+# automatically use SSH. No more password prompts!
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

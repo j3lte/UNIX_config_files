@@ -98,6 +98,8 @@
 	tool = meld
 [http]
 	sslVerify = false
+[push]
+	default = simple
 
 # Forces the use of SSH instead of HTTPS for any URLs that point to github.
 # This means that if a repo uses "https://github/..." for "origin", we will

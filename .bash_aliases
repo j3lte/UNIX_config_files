@@ -28,6 +28,7 @@ alias gll='g ll'
 alias gd='g d'
 alias gg='gb && g s && gl'
 alias ga='g a'
+alias git-cleanup='git branch --merged | grep -v "\*" | grep -v development | xargs -n 1 git branch -d'
 
 # Node
 alias n="node"
@@ -38,3 +39,15 @@ alias vup='vagrant up'
 alias vupnp='vagrant up --no-provision'
 alias vhalt='vagrant halt'
 alias vssh='vagrant ssh'
+
+# grunt autocomplete (disabled for now due to speed)
+# eval "$(grunt --completion=bash)"
+
+# Outputs the sizes of folder & subfolders
+alias foldersize='du --max-depth=1 -h ./ | sort -h'
+
+# Needs aria2c installed, shortcut to download a file with multiple connections
+alias download='aria2c -k 10M -x 16 -s 16 --continue=true'
+
+# Simply outputs your external ip address
+alias whatismyip='curl icanhazip.com'
